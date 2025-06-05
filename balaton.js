@@ -28,7 +28,7 @@ function halinfo(hal){
     document.getElementById('halURL').title=halak[hal].fajMagyar+" Wikipédia oldala";
     document.getElementById('halKep').src="./halak/"+halak[hal].kepFajl;
     document.getElementById('halNevek').innerHTML="<b>"+halak[hal].fajMagyar+" <i>("+halak[hal].fajLatin+")</i></b>";
-    if(halak[hal].egyebNevek == null) {
+    if(halak[hal].egyebNevek != null) {
         document.getElementById('halNevek').innerHTML+="<br>Egyéb elnevezés(ek):<br>"+halak[hal].egyebNevek;
     }
 }
